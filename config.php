@@ -1,16 +1,16 @@
 <?php
 require 'environment.php';
-
+ini_set ('display_errors', 1);
 global $config;
 global $db;
 
 $config = array();
 if(ENVIRONMENT == 'development') {
-	define("BASE_URL", "http://localhost/sen/");
+	define("BASE_URL", "http://localhost/Sensation-Coffe/");
 	$config['dbname'] = 'sensation';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';
-	$config['dbpass'] = 'root';
+	$config['dbpass'] = 'admin123';
 } else {
 	define("BASE_URL", "http://localhost/sen/");
 	$config['dbname'] = 'nova_loja';
